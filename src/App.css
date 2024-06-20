@@ -1,0 +1,44 @@
+/* Estilo geral para a classe .App */
+.App {
+  text-align: center; /* Centraliza o conteúdo dentro do elemento com a classe .App */
+}
+
+/* Estilo para o logotipo da aplicação */
+.App-logo {
+  height: 40vmin; /* Define a altura do logotipo em relação à altura da viewport */
+  pointer-events: none; /* Impede que eventos sejam aplicados ao logotipo */
+}
+
+/* Animação do logotipo apenas se a preferência de redução de movimento não estiver ativada */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear; /* Animação de rotação do logotipo */
+  }
+}
+
+/* Estilo para o cabeçalho da aplicação */
+.App-header {
+  background-color: #282c34; /* Cor de fundo do cabeçalho */
+  min-height: 100vh; /* Altura mínima igual à altura da viewport */
+  display: flex; /* Usa flexbox para layout */
+  flex-direction: column; /* Alinha itens verticalmente em coluna */
+  align-items: center; /* Centraliza itens horizontalmente */
+  justify-content: center; /* Centraliza itens verticalmente */
+  font-size: calc(10px + 2vmin); /* Tamanho da fonte responsivo */
+  color: white; /* Cor do texto */
+}
+
+/* Estilo para links na classe .App-link */
+.App-link {
+  color: #61dafb; /* Cor dos links */
+}
+
+/* Animação de rotação do logotipo */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); /* Começa a rotação do logotipo a partir de 0 graus */
+  }
+  to {
+    transform: rotate(360deg); /* Termina a rotação do logotipo a 360 graus */
+  }
+}

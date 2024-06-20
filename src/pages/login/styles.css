@@ -1,0 +1,146 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define a família de fontes para o corpo */
+  display: flex; /* Define o display como flexível para centralizar o conteúdo verticalmente */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  height: 100vh; /* Define a altura da tela inteira */
+  margin: 0; /* Remove margens padrão */
+  background-color: #18191a; /* Fundo escuro */
+}
+
+.login-page {
+  display: flex; /* Define o display como flexível para centralizar o conteúdo */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  width: 100%; /* Define a largura como 100% */
+}
+
+.login-container {
+  background-color: #242526; /* Fundo do contêiner em tom de cinza escuro */
+  padding: 40px; /* Espaçamento interno do contêiner */
+  border-radius: 8px; /* Borda arredondada */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Sombra leve */
+  max-width: 400px; /* Largura máxima do contêiner */
+  width: 100%; /* Largura total do contêiner */
+  text-align: center; /* Centraliza o conteúdo do texto */
+}
+
+h1 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Define a família de fontes para o título */
+  font-size: 3rem; /* Tamanho da fonte do título */
+  color: #e4e6eb; /* Cor do título em cinza claro */
+  margin-bottom: 20px; /* Espaçamento inferior do título */
+}
+
+form {
+  display: flex; /* Define o display como flexível para organizar os elementos verticalmente */
+  flex-direction: column; /* Organiza os elementos em coluna */
+  align-items: center; /* Centraliza os itens horizontalmente */
+}
+
+.form-group {
+  margin-bottom: 15px; /* Espaçamento inferior do grupo de formulário */
+  width: 100%; /* Largura total do grupo de formulário */
+}
+
+input {
+  width: 100%; /* Largura total do campo de entrada */
+  padding: 14px; /* Espaçamento interno do campo de entrada */
+  border: 1px solid #3a3b3c; /* Borda em tom de cinza escuro */
+  border-radius: 6px; /* Borda arredondada */
+  box-sizing: border-box; /* Inclui o preenchimento e a borda no cálculo da largura total */
+  margin-bottom: 10px; /* Espaçamento inferior do campo de entrada */
+  font-size: 16px; /* Tamanho da fonte */
+  background-color: #3a3b3c; /* Fundo do campo de entrada em cinza escuro */
+  color: #e4e6eb; /* Cor do texto em cinza claro */
+}
+
+input::placeholder {
+  color: #b0b3b8; /* Cor do placeholder em cinza claro */
+}
+
+button {
+  width: 100%; /* Largura total do botão */
+  padding: 14px; /* Espaçamento interno do botão */
+  background-color: #3a3b3c; /* Cor do botão de login em cinza escuro */
+  color: #e4e6eb; /* Cor do texto em cinza claro */
+  border: none; /* Remove a borda do botão */
+  border-radius: 6px; /* Borda arredondada */
+  cursor: pointer; /* Cursor do mouse ao passar sobre o botão */
+  font-size: 20px; /* Tamanho da fonte */
+  font-weight: bold; /* Peso da fonte */
+  margin-top: 10px; /* Espaçamento superior do botão */
+}
+
+button:hover {
+  background-color: #484a4d; /* Cor do botão de login ao passar o mouse */
+}
+
+.forgot-password {
+  display: block; /* Exibe como bloco para ocupar a largura total */
+  margin-top: 15px; /* Espaçamento superior */
+  color: #b0b3b8; /* Cor do link de senha esquecida em cinza claro */
+  text-decoration: none; /* Remove sublinhado padrão */
+  font-size: 14px; /* Tamanho da fonte */
+}
+
+.forgot-password:hover {
+  text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+.divider {
+  width: 100%; /* Largura total do divisor */
+  height: 1px; /* Altura do divisor */
+  background-color: #3a3b3c; /* Cor do divisor em cinza escuro */
+  margin: 20px 0; /* Espaçamento superior e inferior */
+}
+
+.create-account {
+  background-color: #484a4d; /* Cor do botão de criar conta em cinza escuro */
+  font-size: 17px; /* Tamanho da fonte */
+  font-weight: bold; /* Peso da fonte */
+  padding: 12px; /* Espaçamento interno do botão */
+  color: #e4e6eb; /* Cor do texto em cinza claro */
+}
+
+.create-account:hover {
+  background-color: #5a5c5f; /* Cor do botão de criar conta ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .login-container {
+    padding: 30px 15px; /* Espaçamento interno reduzido em telas menores */
+    max-width: 90%; /* Largura máxima reduzida */
+  }
+
+  h1 {
+    font-size: 2.5rem; /* Tamanho da fonte do título reduzido */
+  }
+
+  button {
+    font-size: 18px; /* Tamanho da fonte do botão reduzido */
+  }
+
+  .create-account {
+    font-size: 16px; /* Tamanho da fonte do botão de criar conta reduzido */
+  }
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    padding: 20px 10px; /* Espaçamento interno reduzido ainda mais em telas menores */
+  }
+
+  h1 {
+    font-size: 2rem; /* Tamanho da fonte do título reduzido ainda mais */
+  }
+
+  button {
+    font-size: 16px; /* Tamanho da fonte do botão reduzido ainda mais */
+  }
+
+  .create-account {
+    font-size: 14px; /* Tamanho da fonte do botão de criar conta reduzido ainda mais */
+  }
+}
