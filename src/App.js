@@ -28,13 +28,13 @@ function App() {
         <Route path="/home" element={isLoggedIn ? <Home handleLogout={handleLogout} /> : <Navigate to="/login" />} />
 
         {/* Rota para a página sobre */}
-        <Route path="/about" element={isLoggedIn ? <About handleLogout={handleLogout} /> : <Navigate to="/login" />}/>
+        <Route path="/about" element={isLoggedIn ? <About handleLogout={handleLogout} /> : <Navigate to="/login" />} />
 
         {/* Rota para a página sobre */}
-        <Route path="/services" element={isLoggedIn ? <Services handleLogout={handleLogout} /> : <Navigate to="/login" />}/>
+        <Route path="/services" element={isLoggedIn ? <Services handleLogout={handleLogout} /> : <Navigate to="/login" />} />
 
         {/* Rota para a página sobre */}
-        <Route path="/contact" element={isLoggedIn ? <Contact handleLogout={handleLogout} /> : <Navigate to="/login" />}/>
+        <Route path="/contact" element={isLoggedIn ? <Contact handleLogout={handleLogout} /> : <Navigate to="/login" />} />
 
         {/* Rota padrão para qualquer outro caminho não especificado */}
         {/* Redireciona sempre para a página de login */}
