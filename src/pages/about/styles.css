@@ -1,0 +1,67 @@
+/* Navbar */
+.navbar {
+    width: 100%;
+    background-color: #242526; /* Cor de fundo da barra de navegação */
+    padding: 10px 20px; /* Espaçamento interno */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+    position: fixed; /* Barra de navegação fixa no topo */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Camada mais alta para sobrepor outros elementos */
+    display: flex;
+    justify-content: space-between; /* Alinha os itens à esquerda e à direita */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+  }
+  
+  .navbar-menu {
+    list-style: none; /* Remove os marcadores de lista */
+    display: flex;
+    justify-content: flex-start; /* Alinha os itens à esquerda */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-item {
+    margin-right: 10px; /* Espaçamento entre os itens */
+  }
+  
+  .navbar-item:last-child {
+    margin-right: 0; /* Remove o espaço à direita do último item */
+  }
+  
+  .navbar-item a,
+  .navbar-item button {
+    color: #e4e6eb; /* Cor do texto dos links e botões */
+    text-decoration: none; /* Remove sublinhado padrão dos links */
+    font-size: 18px; /* Tamanho da fonte */
+    background: none; /* Fundo transparente */
+    border: none; /* Remove borda */
+    cursor: pointer; /* Ícone de cursor ao passar sobre */
+    padding: 10px 20px; /* Espaçamento interno dos itens */
+    display: flex;
+    align-items: center; /* Alinha verticalmente textos e ícones */
+  }
+  
+  .navbar-item button {
+    background-color: #3a3b3c; /* Cor de fundo do botão de logout */
+    border-radius: 5px; /* Borda arredondada */
+    padding: 10px 20px; /* Ajusta o padding do botão */
+  }
+  
+  .navbar-item a:hover,
+  .navbar-item button:hover {
+    background-color: #3a3b3c; /* Cor de fundo ao passar o mouse */
+    border-radius: 5px; /* Borda arredondada ao passar o mouse */
+  }
+  
+  .h2{
+    color: #e4e6eb;
+    display: flex;
+    align-items: center;
+  }
+  
+  .h1{
+    color: #e4e6eb;
+    display: flex;
+    align-items: center;
+  }

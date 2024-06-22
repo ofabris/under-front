@@ -22,6 +22,7 @@ function Login({ setLoggedIn }) {
   return (
     <div className="login-page"> {/* Container principal da página de login */}
       <div className="login-container"> {/* Container que centraliza e estiliza o conteúdo do login */}
+        <img src="/elements/logoU.png" className='img-resize' alt=''/>
         <h1>Under</h1> {/* Título da aplicação */}
         <form onSubmit={handleLogin}> {/* Formulário de login que chama handleLogin no submit */}
           <div className="form-group"> {/* Grupo de entrada para o nome de usuário */}

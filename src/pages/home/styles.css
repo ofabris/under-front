@@ -53,3 +53,15 @@
   background-color: #3a3b3c; /* Cor de fundo ao passar o mouse */
   border-radius: 5px; /* Borda arredondada ao passar o mouse */
 }
+
+.h2{
+  color: #e4e6eb;
+  display: flex;
+  align-items: center;
+}
+
+.h1{
+  color: #e4e6eb;
+  display: flex;
+  align-items: center;
+}

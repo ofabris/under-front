@@ -1,16 +1,34 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './styles.css'; // Importe o CSS
 
 function Home({ handleLogout }) {
+
+  const navigate = useNavigate();
+
+  const handleNavigate = (path) => {
+    return () => {
+      navigate(path);
+    };
+  };
+
   return (
     <div>
       {/* Navbar com os itens de menu */}
       <nav className="navbar">
         <ul className="navbar-menu">
-          <li className="navbar-item"><a href="#home">Home</a></li>
-          <li className="navbar-item"><a href="#about">About</a></li>
-          <li className="navbar-item"><a href="#services">Services</a></li>
-          <li className="navbar-item"><a href="#contact">Contact</a></li>
+          <li className="navbar-item">
+            <button onClick={handleNavigate('/home')} className="link-button">Home</button>
+          </li>
+          <li className="navbar-item">
+            <button onClick={handleNavigate('/about')} className="link-button">Sobre</button>
+          </li>
+          <li className="navbar-item">
+            <button onClick={handleNavigate('/services')} className="link-button">Serviços</button>
+          </li>
+          <li className="navbar-item">
+            <button onClick={handleNavigate('/contact')} className="link-button">Contato</button>
+          </li>
           {/* Item de menu para o botão de Logout */}
           <li className="navbar-item">
             <button onClick={handleLogout}>Logout</button>
@@ -19,7 +37,8 @@ function Home({ handleLogout }) {
       </nav>
       {/* Conteúdo principal da página */}
       <div className="content">
-        <h1>Welcome to Home Page</h1>
+        <h1>Bem-vindo a Under!</h1>
+        <h2 className='h2'>Aqui você descobre o mundo através da música!</h2>
       </div>
     </div>
   );
