@@ -49,7 +49,7 @@ function App() {
     <div className="container">
       <h1 className="title">
         Under
-        <IoThunderstorm size={60} />
+        <IoThunderstorm size={40} />
       </h1>
 
       <div className="containerLogin">

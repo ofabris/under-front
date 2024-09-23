@@ -91,7 +91,7 @@ button.buttonLogin svg {
 }
 
 .containerRegisterLink:hover {
-  color: #000000;
+  color: #9c9c9c;
 }
 
 .modal {
@@ -105,7 +105,6 @@ button.buttonLogin svg {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  /* Fundo escuro */
 }
 
 .modalContent {
@@ -114,7 +113,6 @@ button.buttonLogin svg {
   border-radius: 5px;
   text-align: center;
   width: 300px;
-  /* Largura do modal */
 }
 
 .close {
