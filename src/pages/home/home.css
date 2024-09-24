@@ -1,6 +1,20 @@
+/* Definição de Variáveis CSS para Cores */
+:root {
+  --navbar-bg-color: rgb(44, 46, 46);
+  --navbar-border-color: #dbdbdb;
+  --navbar-text-color: #ffffff;
+  --navbar-hover-color: rgb(167, 167, 167);
+  --panel-bg-color: #f9f9f9;
+  --panel-border-color: #ccc;
+  --metric-bg-color: rgb(44, 46, 46);
+  --totals-bg-color: #ecf0f1;
+  --bg-bg-color: rgb(216, 216, 216);
+}
+
+/* Estilos para a Navbar */
 .navbar {
-  background-color: rgb(44, 46, 46);
-  border-bottom: 1px solid #dbdbdb;
+  background-color: var(--navbar-bg-color);
+  border-bottom: 1px solid var(--navbar-border-color);
   padding: 10px 0;
   position: fixed;
   width: 100%;
@@ -21,7 +35,7 @@
 .navbar-logo {
   font-size: 24px;
   font-weight: bold;
-  color: #ffffff;
+  color: var(--navbar-text-color);
 }
 
 .navbar-menu {
@@ -32,12 +46,13 @@
 
 .navbar-item a {
   text-decoration: none;
-  color: #ffffff;
+  border-radius: 10%;
+  color: var(--navbar-text-color);
   transition: color 0.3s ease;
 }
 
 .navbar-item a:hover {
-  color: rgb(167, 167, 167);
+  color: var(--navbar-hover-color);
 }
 
 .navbar-toggle {
@@ -47,21 +62,92 @@
 
 @media screen and (max-width: 768px) {
   .navbar-menu {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 60px;
-      right: 0;
-      background-color:rgb(44, 46, 46);
-      width: 100%;
-      padding: 20px 0;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: var(--navbar-bg-color);
+    width: 100%;
+    padding: 20px 0;
   }
 
   .navbar-menu.active {
-      display: flex;
+    display: flex;
   }
 
   .navbar-toggle {
-      display: flex;
+    display: flex;
   }
+}
+
+/* Estilos para a Home Container */
+.home-container {
+  margin-top: 60px; /* Ajuste para dar espaço abaixo da navbar fixa */
+  overflow-x: auto; /* Adiciona barra de rolagem horizontal */
+  background-color: var(--bg-bg-color);
+  border-radius: 10px;
+}
+
+/* Estilos para os Painéis */
+.panels {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.panel {
+  position: relative;
+  flex: 0 0 45%; /* Cada painel ocupa 45% da largura, ajustável conforme necessário */
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid var(--panel-border-color);
+  border-radius: 8px;
+  text-align: center;
+  background-color: var(--panel-bg-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px; /* Ajuste conforme necessário */
+  height: auto;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto; /* Adiciona barra de rolagem vertical */
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.metrics {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.metric {
+  flex: 1;
+  color: var(--navbar-text-color);
+  min-width: 300px;
+  margin: 10px;
+  padding: 20px;
+  background-color: var(--metric-bg-color);
+  border-radius: 10px;
+}
+
+.totals {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: var(--totals-bg-color);
+  border-radius: 10px;
 }
