@@ -151,22 +151,3 @@
   background-color: var(--totals-bg-color);
   border-radius: 10px;
 }
-
-/* Estilos para o Dashboard */
-.dashboardPanel {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.chart-container {
-  flex: 1 1 300px; /* Flex-grow, flex-shrink, flex-basis */
-  margin: 10px;
-  min-width: 300px; /* Garantir que os gráficos não fiquem muito pequenos */
-}
-
-@media (max-width: 768px) {
-  .chart-container {
-    flex: 1 1 100%; /* Ocupa 100% da largura em telas menores */
-  }
-}
